@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+    <div class="img">
+        {% load static %}
+        <img src="{% static 'images/ca.png' %}">
+    </div>
+    <div class="text">
+        <h2>Top quantum computing applications in the real world:</h2>
+        <ul>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Computational Chemistry</li>
+            <li>Drug Design & Development</li>
+            <li>Cybersecurity & Cryptography</li>
+            <li>Financial Modelling</li>
+            <li>Logistics Optimisation</li>
+            <li>Weather Forecasting</li>
+        </ul>
+    </div>
+
+{% endblock %}

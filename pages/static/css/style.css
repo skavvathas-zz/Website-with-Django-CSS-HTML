@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #42275a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.all {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position:absolute;
+    left: 60%;
+    top: 27%;
+    right: 9%;
+    color: cornsilk;
+    font-size: 25px;
+}
+
+.text h1:hover{
+    font-size: 51px;
+}
+
+.text ul{
+    display: block;
+    list-style-type: upper-alpha, upper-latin;
+}
+
+.text ul li{
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 18px;
+
+}
+
+.navbar {
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    top: 0;
+    left: 300px;
+    right: 300px;
+    height: 100px;
+    text-align: center;
+    border-radius: 1%;
+    font-size: 23px;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu ul li i{
+    text-decoration: none;
+    color: white;
+    padding-left: 6px;
+}
+
+.menu ul li:hover{
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background-color:blueviolet;*/
+    border-radius: 3px;
+}
+
+.menu ul li a{
+    color: rgba(243, 232, 242, 0.959);
+    text-decoration: none;
+    height: 7px;
+}
+
+.sub-menu1{
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 2.5%;
+    padding: 5px;
+    /*left: 20%;*/
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menu ul li:hover .sub-menu1 ul{
+    display: block;
+}
+
+.menu ul li:hover .sub-menu1 ul li{
+    padding: 15px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+.img img{
+    width: 1000px;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    border-radius: 3%;
+}
+
+.img img:hover{
+    width: 1005px;
+    left:3.9%;
+}
+
+#ending{
+    height: 200px;
+    width: 100%;
+    border-top: 5px solid  #0b8793;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.Create{
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.spiros{
+    position:absolute;
+    left: 35%;
+    bottom: -15%;
+}
+
+.images{
+    position:absolute;
+    left: 60%;
+    bottom: -15%;
+}
+
+.images img{
+    width: 20px;
+    padding: 5px;
+    left: 100px;
+}
+
+.images img:hover{
+    width: 22px;
+}

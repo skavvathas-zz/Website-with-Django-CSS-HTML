@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Website for Quantum computing">
+    <meta charset="UTF-8">
+    <meta name="author" content="Spiros Kavvathas">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="all">
+        <div class="menu">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'qubits' %}">Qubits</a></li>
+                    <li><a href="#">Quantum Computers<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="{% url 'traditional_computing'%}">Traditional computing</a></li>
+                                <li><a href="{% url 'quantum_applications' %}">Quantum application</a></li>
+                                <li><a href="{% url 'quantum_errors' %}">Quantum errors</a></li>
+                                <li><a href="{% url 'quantum_supremacy' %}">Quantum supremacy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="{% url 'quantum_programming' %}">Quantum Programming</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+    <!--{% block end %}-->
+    <div id="ending">
+        <div class="spiros"><h1>Created by Spiros Kavvathas</h1></div>
+        <div class="images">
+            <a href="https://www.instagram.com/skavv01/">
+                {% load static %}
+                <img src="{% static 'images/P9HtDp-instagram-logo-png-icon-transparent.png' %}">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100041838316679">
+                {% load static %}
+                <img src="{% static 'images/image-black-facebook-logo-png-26.png' %}">
+            </a>
+            <a href="https://twitter.com/wNAnEO2jK9chBaB">
+                {% load static %}
+                <img src="{% static 'images/twitter-png-transparent-images-black-background-28.png' %}">
+            </a>
+            <a href="https://www.youtube.com/channel/UCffFnGd3fLsPwVhdXrnsvQA">
+                {% load static %}
+                <img src="{% static 'images/hd-clipart-youtube-logo-19.png' %}">
+            </a>
+        </div>
+    </div>
+    <!--{% endblock %}-->
+</body>
+
+</html>
