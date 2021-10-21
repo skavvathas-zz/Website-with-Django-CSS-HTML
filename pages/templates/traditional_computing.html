@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+
+{% block content %}
+    <div class="img">
+        {% load static %}
+        <img src="{% static 'images/eppp.png' %}">
+    </div>
+    <div class="text">
+        <h2>Quantum Versus Classical Computing</h2>
+        In general, classical software development translates a programming 
+        language source code into platform-specific ‘machine code’ and operations 
+        (gates) that are performed on thousands of transistors. Similar to how classical 
+        gates manipulate bits, in quantum computing, quantum gates manipulate qubits.
+
+        In classical computers, an algorithm usually requires lots of parallel 
+        computations which can be time-consuming. But quantum programming will 
+        take into account multiple options at the same time and execute an algorithm 
+        on all options in a single step. One key opportunity for advancing quantum 
+        computing lies in identifying methods to express quantum applications using 
+        high-level abstractions, then compiling and mapping these onto quantum simulators. 
+    </div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+    <div class="img">
+        {% load static %}
+        <img src="{% static 'images/uf1.jpg' %}">
+    </div>
+    <div class="text">
+        <h1>Quantum error correction (QEC)</h1>
+        is used in quantum computing to protect quantum information 
+        from errors due to decoherence and other quantum noise. 
+        Quantum error correction is essential if one is to achieve fault-tolerant 
+        quantum computation that 
+        can deal not only with noise on stored quantum information, 
+        but also with faulty quantum gates, faulty quantum preparation, and faulty measurements. 
+    </div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+    <div class="img">
+        {% load static %}
+        <img src="{% static 'images/sup.jpg' %}">
+    </div>
+    <div class="text">
+        <h1>Quantum supremacy</h1>
+        In quantum computing, quantum supremacy or quantum advantage 
+        is the goal of demonstrating that a programmable quantum 
+        device can solve a problem that no classical computer can solve 
+        in any feasible amount of time (irrespective of the usefulness of the problem).
+        Conceptually, quantum supremacy involves both the engineering task of building 
+        a powerful quantum computer and the computational-complexity-theoretic task of 
+        finding a problem that can be solved by that quantum computer and has a 
+        superpolynomial speedup over the best known or possible classical algorithm 
+        for that task. 
+        <!--The term was coined by John Preskill in 2012,
+        but the concept of a quantum computational advantage, specifically for 
+        simulating quantum systems, dates back to Yuri Manin's (1980) and 
+        Richard Feynman's (1981) proposals of quantum computing.
+        Examples of proposals to demonstrate quantum supremacy include 
+        the boson sampling proposal of Aaronson and Arkhipov,
+        D-Wave's specialized frustrated cluster loop problems, 
+        and sampling the output of random quantum circuits.-->
+    </div>
+
+{% endblock %}

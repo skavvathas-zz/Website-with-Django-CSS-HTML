@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="img">
+        {% load static %}
+        <img src="{% static 'images/1*Ts2BteaMQ4T7pww4-PniCA.png' %}">
+    </div>
+    <div class="text">
+        <h1>Quantum programming</h1>
+        is the process of assembling 
+        sequences of instructions, called quantum programs, 
+        that are capable of running on a quantum computer. 
+        Quantum programming languages help express quantum 
+        algorithms using high-level constructs.
+    </div>
+    <!--<div class="text_quantum_programming_2">
+        <h1>The most popular quantum imperative languages are:<h1>
+            <h3>QCL:<h3> Quantum Computing Language, one of the first implemented 
+            quantum programming languages. It resembles C language in 
+            regards of syntax and data types.
+            <h3>QMASM:<h3> Quantum Macro Assembler, published in 2016. 
+            It is a low-level language specific to quantum annealing. 
+            The significance of QMASM is that it relieves the programmer 
+            from having to know system-specific hardware details while still 
+            allowing programs to be expressed at a low level of abstraction.
+            <h3>Silq<h3> is originally published in 2020. Silq is a high-level programming 
+            language written in D language which has 482 stars and 10 contributors 
+            on github and is regularly updated as of 2021.
+    <div>-->
+{% endblock %}

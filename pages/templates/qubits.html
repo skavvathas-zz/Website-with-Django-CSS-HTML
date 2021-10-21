@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="img">
+        {% load static %}
+        <img src="{% static 'images/computacion-cuantica.jpg' %}">
+    </div>
+    <div class="text">
+        <h1>What is a qubit?</h1>
+        A qubit (or quantum bit) is the quantum mechanical analogue of a classical bit. 
+        In classical computing the information is encoded in bits, 
+        where each bit can have the value zero or one. 
+        In quantum computing the information is encoded in qubits. 
+        A qubit is a two-level quantum system where the two basis qubit states are 
+        usually written as ∣0⟩ and ∣1⟩. 
+        A qubit can be in state ∣0⟩, ∣1⟩ or (unlike a classical bit) in a linear 
+        combination of both states. The name of this phenomenon is superposition.
+
+    </div>
+    <!--<div class="text_qubit_2">
+        <h1>Bit versus qubit</h1>
+        A binary digit, characterized as 0 or 1, is used to represent 
+        information in classical computers. When averaged over both of its states (0,1), 
+        a binary digit can represent up to one bit of Shannon information, where a bit 
+        is the basic unit of information. However, in this article, the word bit is 
+        synonymous with a binary digit.In classical computer technologies, a processed 
+        bit is implemented by one of two levels of low DC voltage, and whilst switching 
+        from one of these two levels to the other, a so-called "forbidden zone" between 
+        two logic levels must be passed as fast as possible, as electrical voltage cannot 
+        change from one level to another instantaneously.
+        There are two possible outcomes for the measurement of a qubit—usually taken to 
+        have the value "0" and "1", like a bit or binary digit. However, whereas the state 
+        of a bit can only be either 0 or 1, the general state of a qubit according to quantum 
+        mechanics can be a coherent superposition of both. Moreover, whereas a measurement 
+        of a classical bit would not disturb its state, a measurement of a qubit would destroy 
+        its coherence and irrevocably disturb the superposition state. 
+        It is possible to fully encode one bit in one qubit. However, a qubit can hold more 
+        information, e.g., up to two bits using superdense coding.
+        For a system of n components, a complete description of its state in classical p
+        hysics requires only n bits, whereas in quantum physics it requires (2n - 1) 
+        complex numbers (or a single point in a 2n-dimensional vector space). 
+    </div>-->
+
+{% endblock %}
